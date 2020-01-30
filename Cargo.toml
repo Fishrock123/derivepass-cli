@@ -1,0 +1,21 @@
+[package]
+name = "derivepass-cli"
+version = "0.1.0"
+edition = "2018"
+authors = ["Jeremiah Senkpiel <fishrock123@rocketmail.com>"]
+license = "BlueOak-1.0.0"
+description = "Simple key derivation utility."
+readme = "README.md"
+homepage = "https://github.com/fishrock123/derivepass-cli"
+repository = "https://github.com/fishrock123/derivepass-cli"
+keywords = ["derivepass", "password", "pass", "manager", "derive"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+scrypt = { version = "0.2", default-features = false }
+getopts = "0.2"
+rpassword = "4.0"
+radix64 = "0.6.2"
+atty = "0.2"
